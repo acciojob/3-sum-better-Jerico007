@@ -15,7 +15,7 @@ function threeSum(arr, target) {
           while (j < k) {
             let sum = arr[i] + arr[j] + arr[k];
 
-            if ((closestSum - target) > (sum - target)) {
+            if (Math.abs(closestSum - target) > Math.abs(sum - target)) {
               closestSum = sum;
             }
 
